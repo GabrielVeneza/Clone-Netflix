@@ -221,10 +221,23 @@ header {
     z-index: 2;
 }
 
-header img{
-    width: 150px
+.film-header{
+   opacity: 0;
+   transition: 2s;
 }
 
+header:hover .film-header{
+    opacity: 1;
+    transition: 0.2s;
+}
+
+header img{
+    width: 150px;
+    
+}
+header a{
+    text-shadow: 2px 2px 10px black;
+}
 .menu-list{
     list-style: none;
     padding-left: 0;
@@ -256,6 +269,7 @@ header img{
 
 #hero{
     height:700px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -290,7 +304,7 @@ header img{
 .trailer{
     position: absolute;
     background-size: cover;
-    top:-100px;
+    top:0;
     left:0;
     bottom:0;
     display:block;
