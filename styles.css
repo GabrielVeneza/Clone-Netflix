@@ -319,6 +319,9 @@ header img{
     margin-top: -10px;
     margin-right: 5px;
 }
+#hero-infos a{
+    text-decoration: none;
+}
 
 #main-content{
     margin-top: 700px;
