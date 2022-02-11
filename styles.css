@@ -1,0 +1,398 @@
+
+/* GERAIS */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: #000;
+    
+}
+
+
+
+/* LOGIN */
+
+#container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/netflix-back.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 150px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.form{
+    width: 350px;
+    height: 500px;
+    background: rgba(0,0,0, 0.8);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.title{
+    margin: 0 150px 80px 0;
+    font-family: 'poppins';
+    font-size: 24px;
+}
+
+.email{
+    width: 220px;
+    padding: 13px;
+    background: #333333;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    bottom: 60px;
+}
+
+.email::placeholder{
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.password{
+    width: 220px;
+    padding: 13px;
+    background: #333333;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    bottom: 45px;
+}
+
+.password::placeholder{
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.btn-signIn{
+    width:220px;
+    padding: 9px;
+    border: none;
+    color: #fff;
+    background: #E50913;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'poppins';
+    cursor: pointer;
+    transition: filter 0.5s;
+}
+
+.btn-signIn:hover{
+    filter: brightness(0.8);
+}
+
+.check{
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.chackbox{
+    cursor:pointer;
+    margin-right: 5px;
+    font-size: 28px;
+}
+
+.rememberCheck{
+    font-size: 13px;
+    color: #aaaaaa;
+    margin-right: 21px;
+}
+
+.needCheck{
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+.face{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+}
+
+.img-face{
+    width: 16px;
+    position: relative;
+    right: 28px;
+    top: 18px;
+    cursor: pointer;
+}
+
+.faceText{
+    font-size: 12px;
+    color: #aaaaaa;
+    font-family: 'poppins';
+    margin: 2px 7px 0 0;
+    margin-bottom: 10px;
+}
+
+.footer{
+    margin-top: 6px;
+    max-width: 280px;
+}
+
+.new{
+    margin-left: 37px;
+    font-size: 12px;
+    font-family: 'poppins';
+    color: #aaaaaa;
+}
+.new strong{
+    color: #fff;
+}
+
+.footer p{
+    font-size: 12px;
+    color: #aaaaaa;
+    font-family: 'poppins';
+    margin-top: 10px;
+    margin-left: 37px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+.btn-custom-white{
+    background-color: #fff;
+    font-weight: 500;
+}
+.btn-custom-translucent{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-weight: 500;   
+}
+.btn-custom-translucent:hover{
+    color: #fff;
+    opacity: 0.8;
+}
+
+.btn-custom-round{
+    padding: 5px 9px !important;
+}
+
+.opacity-50{
+    opacity: 0.5;
+}
+
+.btn_animation{
+    
+   transition: 0.3s;
+}
+.btn_animation:hover{
+    transform: scale(1.1);
+   transition: 0.3s;
+}
+
+/* HOME */
+
+header {
+    padding: 50px;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.69) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    position: absolute;
+    width: 100%;
+    top:0;
+    z-index: 2;
+}
+
+header img{
+    width: 150px
+}
+
+.menu-list{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 7px;
+}
+
+.menu-list li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu-list li a{
+    color: #fff;
+    text-decoration: none;
+    transition: filter 0.1s;
+}
+
+.menu-list li a:hover{
+    filter: brightness(0.8);
+}
+
+.film-home-logo{
+    width:900px;
+}
+.film-page-logo{
+    width:900px;
+    
+}
+
+#hero{
+    height:700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    background: linear-gradient(
+    to bottom,
+    rgba(0,0,0, 0),
+    rgba(0,0,0, 100)
+  ),url(./images/filmes/o_diabo_de_cada_di/o_diabo_de_cada_dia_back.jpg);
+    
+}
+
+#hero-film-page{
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom:0;
+    padding: 0;
+    background: linear-gradient(
+    to left,
+    rgba(0,0,0, 0),
+    rgba(0,0,0, 100)
+  ),url(./images/Back.png);
+}
+
+.trailer{
+    position: absolute;
+    background-size: cover;
+    top:-100px;
+    left:0;
+    bottom:0;
+    display:block;
+    width:100%;
+    
+}
+
+
+#hero-infos{
+    padding:0;
+    margin-top: 170px;
+    z-index: 3;
+    position: relative;
+}
+
+#hero-infos img.film-home-logo{
+    margin-bottom: 50px;
+}
+
+#hero-infos h1{
+    margin-bottom: 20px;
+}
+
+#hero-infos h1 img{
+    width: 40px;
+    margin-top: -10px;
+    margin-right: 5px;
+}
+
+#main-content{
+    margin-top: 700px;
+}
+
+.film-list{
+    overflow-x: scroll;
+    list-style: none;
+    white-space: nowrap;
+    padding: 20px 0;
+    display: block;
+    border: 1px solid transparent;
+}
+
+.film-list::-webkit-scrollbar{
+    display: none;
+}
+
+.film{
+    display: inline-block;
+    width:250px;
+    margin-right: 10px;
+    border-radius: 3px;
+    overflow:hidden;
+    transition: 0.3s;
+    overflow:auto;
+    border: 1px solid transparent;
+    overflow-y: hidden;
+}
+
+.film:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.film:hover .film-info{
+    transform: scale(1);
+    
+}
+
+.film:first-child{
+    margin-left: 115px;
+}
+
+.film-info{
+    background-color: #171717;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    transform: scale(0);
+}
+
+.film-info .col-12{
+    margin-top: 5px;
+}
+
+.film-info p{
+    margin-top: 20px;
+    color: #7E7B7B;
+    font-size: 12px;
+   
+}
+
+.film-info p text{
+    color: #fff;
+}
+
+section{
+    margin-bottom: -100px;
+    position: relative;
+}
+
+section:hover{
+    z-index: 9;
+}
