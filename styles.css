@@ -209,13 +209,21 @@ body {
 /* HOME */
 
 header {
-    padding: 7px 5px 5px 5px;
-    background: black;
+    padding: 5px 7px 5px 7px;
+    background-color:black;
     position: fixed;
     width: 100%;
     top:0;
     z-index: 99;
+    transition: 0.5s;
 }
+
+ 
+.onTop{
+    background-color:black;
+    transition: 0.5s;
+ }
+
 header .menu-list{
     margin: 0;
 }
@@ -233,6 +241,28 @@ header .mdi-bell-badge{
     margin: 0px 0px 0px 50px;
 }
 
+header #menu-1{
+    height:35px;
+}
+
+header #menu-2{
+    text-align: right;
+}
+
+header #menu-3{
+    text-align: right;
+}
+
+header #menu-2 li{
+    width: 40px
+}
+
+.avatar{
+    width: 40px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
 .film-header{
    opacity: 0;
    transition: 2s;
@@ -246,12 +276,6 @@ header:hover .film-header{
 header img{
     width: 90px;
     
-}
-
-.avatar{
-    width: 40px;
-    margin-top: 0px;
-    margin-bottom: 5px;
 }
 
 header a{
